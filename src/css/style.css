@@ -1,0 +1,9 @@
+.container {
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*General*/
+.hidden {
+  display: none;
+}

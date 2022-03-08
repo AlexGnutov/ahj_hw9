@@ -1,0 +1,149 @@
+body {
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+
+.w-us-container {
+  position: absolute;
+  margin: 30px;
+  height: 300px;
+  width: 250px;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+
+.w-us-form {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  text-align: center;
+  overflow: hidden;
+}
+.w-us-form-shown {
+  animation-name: form-show;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+.w-us-form-hidden {
+  animation-name: form-hide;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes form-show {
+  0% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    outline: rgba(0, 0, 255, 0) 10px solid;
+  }
+  100% {
+    opacity: 1;
+    outline: rgba(0, 0, 255, 0.1) 10px solid;
+    height: 300px;
+    width: 250px;
+  }
+}
+@keyframes form-hide {
+  0% {
+    opacity: 1;
+    outline: rgba(0, 0, 255, 0.1) 10px solid;
+    height: 300px;
+    width: 250px;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    outline: rgba(0, 0, 255, 0) 10px solid;
+  }
+}
+.w-us-cross {
+  font-size: large;
+  font-weight: 600;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  top: 2px;
+  right: 5px;
+  padding: 0;
+  margin: 0;
+}
+.w-us-cross:hover, .w-us-circle:hover {
+  cursor: pointer;
+}
+.w-us-header {
+  margin-top: 20px;
+  font-size: x-large;
+}
+.w-us-textarea {
+  margin-top: 20px;
+  width: 220px;
+  height: 150px;
+  border-radius: 5px;
+}
+.w-us-send-btn {
+  margin: 15px;
+  height: 40px;
+  width: 120px;
+  border: 0;
+  background-color: rgba(0, 105, 217, 0.7);
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.w-us-circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 30px;
+}
+
+.w-us-circle-normal {
+  animation-name: circle-show;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+.w-us-circle-hover {
+  animation-name: circle-scale;
+  animation-duration: 500ms;
+  animation-fill-mode: initial;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.w-us-circle-hide {
+  animation-name: circle-hide;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes circle-hide {
+  0% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+@keyframes circle-show {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes circle-scale {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}

@@ -1,0 +1,150 @@
+.liker-container {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.liker-button {
+  position: relative;
+  box-sizing: border-box;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 100px;
+}
+.liker-button:hover {
+  cursor: pointer;
+}
+.liker-sky {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  height: 200px;
+  width: 100px;
+}
+.liker-heart {
+  margin-left: -10px;
+  margin-top: 20px;
+  position: absolute;
+  background-image: url("../img/heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  animation-direction: normal;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.liker-heart-fly-1 {
+  animation-name: fly-1;
+}
+.liker-heart-fly-2 {
+  animation-name: fly-2;
+}
+.liker-heart-fly-3 {
+  animation-name: fly-3;
+}
+.liker-heart-fly-4 {
+  animation-name: fly-4;
+}
+
+@keyframes fly-1 {
+  0% {
+    bottom: -20px;
+    left: 50%;
+    opacity: 1;
+  }
+  25% {
+    bottom: 25%;
+    left: 0%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  75% {
+    bottom: 75%;
+    left: 100%;
+  }
+  100% {
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+  }
+}
+@keyframes fly-2 {
+  0% {
+    bottom: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  25% {
+    bottom: 25%;
+    left: 50%;
+  }
+  50% {
+    bottom: 50%;
+    left: 100%;
+  }
+  75% {
+    bottom: 75%;
+    left: 100%;
+  }
+  100% {
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+  }
+}
+@keyframes fly-3 {
+  0% {
+    bottom: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  25% {
+    bottom: 25%;
+    left: 50%;
+  }
+  50% {
+    bottom: 50%;
+    left: 0%;
+  }
+  75% {
+    bottom: 75%;
+    left: 100%;
+  }
+  100% {
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+  }
+}
+@keyframes fly-4 {
+  0% {
+    bottom: 0;
+    left: 50%;
+    opacity: 1;
+  }
+  25% {
+    bottom: 25%;
+    left: 100%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  75% {
+    bottom: 75%;
+    left: 0%;
+  }
+  100% {
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+  }
+}

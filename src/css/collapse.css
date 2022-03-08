@@ -1,0 +1,53 @@
+.container {
+  background-color: lavender;
+}
+
+.ce-container {
+  padding: 10px;
+}
+.ce-header {
+}
+.ce-button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 105, 217, 100);
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: large;
+}
+.ce-button:hover {
+  cursor: pointer;
+  outline: lightblue solid 5px;
+}
+.ce-text-container {
+  padding: 10px;
+}
+.ce-text {
+  margin: 10px;
+  overflow: hidden;
+}
+.ce-text-collapsed {
+  display: block;
+  height: 0;
+  transition-property: height;
+  transition-duration: 1s;
+}
+.ce-text-opened {
+  display: block;
+  border: 1px lightgrey solid;
+  transition-property: height, color;
+  transition-duration: 1s;
+}
+.ce-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+.ce-copy-button {
+  border: none;
+  background-color: rgba(248, 250, 251, 100);
+  color: darkgray;
+  border-radius: 5px;
+  height: 30px;
+  width: 60px;
+}
